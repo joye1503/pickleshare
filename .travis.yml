@@ -16,8 +16,8 @@ matrix:
       sudo: true
     - python: "3.7"
       os: linux
-      dist: focal
+      dist: xenial
       group: edge
       arch: arm64-graviton2
-      virt: vm
+      virt: lxd
       sudo: true
