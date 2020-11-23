@@ -16,10 +16,9 @@ matrix:
       sudo: true
     - python: "3.7"
       os: linux
-      dist: focal
+      dist: xenial
       sudo: required
       group: edge
       arch: arm64-graviton2
-      virt: vm
-      dist: xenial
+      virt: lxd
       sudo: true
