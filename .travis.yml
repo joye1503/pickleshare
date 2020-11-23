@@ -3,12 +3,6 @@ install: pip install -e .
 script: py.test
 
 python:
-    - "pypy"
-    - "pypy3"
-    - "2.7"
-    - "3.3"
-    - "3.4"
-    - "3.5"
     - "3.6"
 
 matrix:
@@ -16,6 +10,16 @@ matrix:
     - python: "3.7"
       dist: xenial
       sudo: true
+    - python: "3.7"
+      arch: arm64
+      dist: xenial
+      sudo: true
     - python: "3.8-dev"
+      os: linux
+      dist: focal
+      sudo: required
+      group: edge
+      arch: arm64-graviton2
+      virt: vm
       dist: xenial
       sudo: true
