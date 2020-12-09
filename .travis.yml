@@ -3,20 +3,20 @@ install: pip install -e .
 script: py.test
 
 python:
-    - "3.6"
+    - "3.7"
 
 matrix:
   include:
     - python: "3.7"
-      dist: bionic
+      dist: xenial
       sudo: true
     - python: "3.7"
       arch: arm64
-      dist: bionic
+      dist: xenial
       sudo: true
     - python: "3.7"
       os: linux
-      dist: bionic
+      dist: xenial
       group: edge
       arch: arm64-graviton2
       virt: lxd
